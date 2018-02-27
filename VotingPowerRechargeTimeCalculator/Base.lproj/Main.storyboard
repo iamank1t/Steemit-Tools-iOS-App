@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VotingPowerRechargeTimeCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DC3-6f-zqB">
+                                <rect key="frame" x="67" y="50" width="240" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="lf2-PB-sqa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steem voting power recharging time calculator" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5m-DD-hTw">
+                                <rect key="frame" x="69" y="149" width="237" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targeted Voting Power: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-vg-0N4">
+                                <rect key="frame" x="16" y="236" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0B-Jd-SLn">
+                                <rect key="frame" x="218" y="231" width="119" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Voting Power :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyV-lD-DVY">
+                                <rect key="frame" x="16" y="290" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akp-Ek-Vq6">
+                                <rect key="frame" x="218" y="285" width="119" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1R-Sl-8hH">
+                                <rect key="frame" x="112" y="358" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.4431372549" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3o5-hw-NwQ"/>
+                                    <constraint firstAttribute="width" constant="150" id="uNo-ch-RPv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5R-st-56j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label to show time in seconds" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdE-X0-SVy">
+                                <rect key="frame" x="10" y="423" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label to time in minutes" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-fz-sCQ">
+                                <rect key="frame" x="10" y="458.5" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label to time in hours" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1E9-2G-1jM">
+                                <rect key="frame" x="10" y="494" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label to time in days" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA4-Jp-Xe6">
+                                <rect key="frame" x="10" y="529.5" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.74901960779999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eyV-lD-DVY" firstAttribute="leading" secondItem="Ics-vg-0N4" secondAttribute="leading" id="1Fh-B5-R81"/>
+                            <constraint firstItem="U0B-Jd-SLn" firstAttribute="centerY" secondItem="Ics-vg-0N4" secondAttribute="centerY" id="2RY-tn-qnv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oA4-Jp-Xe6" secondAttribute="trailing" constant="10" id="2TM-ot-EF8"/>
+                            <constraint firstItem="V1R-Sl-8hH" firstAttribute="top" secondItem="eyV-lD-DVY" secondAttribute="bottom" constant="47" id="2rf-hG-0GA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1E9-2G-1jM" secondAttribute="trailing" constant="10" id="3MV-Jq-hRh"/>
+                            <constraint firstItem="1E9-2G-1jM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8W2-kO-Ilo"/>
+                            <constraint firstItem="V1R-Sl-8hH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ClR-y1-chq"/>
+                            <constraint firstItem="DC3-6f-zqB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="JTJ-mF-nCb"/>
+                            <constraint firstItem="Akp-Ek-Vq6" firstAttribute="centerY" secondItem="eyV-lD-DVY" secondAttribute="centerY" id="LmF-6X-EjQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Akp-Ek-Vq6" secondAttribute="trailing" constant="38" id="Mx7-fs-aEm"/>
+                            <constraint firstItem="t5m-DD-hTw" firstAttribute="top" secondItem="DC3-6f-zqB" secondAttribute="bottom" constant="8" id="NUb-vk-yFD"/>
+                            <constraint firstItem="Ics-vg-0N4" firstAttribute="top" secondItem="t5m-DD-hTw" secondAttribute="bottom" constant="46" id="OKE-pb-GNX"/>
+                            <constraint firstItem="HdE-X0-SVy" firstAttribute="top" secondItem="V1R-Sl-8hH" secondAttribute="bottom" constant="25" id="Sx7-jW-oXU"/>
+                            <constraint firstItem="DC3-6f-zqB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Wjp-mb-DIq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DC3-6f-zqB" secondAttribute="trailing" constant="68" id="Wxm-x3-pID"/>
+                            <constraint firstItem="eyV-lD-DVY" firstAttribute="top" secondItem="Ics-vg-0N4" secondAttribute="bottom" constant="33" id="Xrj-5A-z7r"/>
+                            <constraint firstItem="3QR-fz-sCQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="YgW-6b-Ivn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3QR-fz-sCQ" secondAttribute="trailing" constant="10" id="bET-CR-niq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HdE-X0-SVy" secondAttribute="trailing" constant="10" id="bcX-GM-DlM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t5m-DD-hTw" secondAttribute="trailing" constant="69" id="cpZ-yC-BEk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U0B-Jd-SLn" secondAttribute="trailing" constant="38" id="csG-e7-iHs"/>
+                            <constraint firstItem="Akp-Ek-Vq6" firstAttribute="leading" secondItem="U0B-Jd-SLn" secondAttribute="leading" id="gYF-zI-GgS"/>
+                            <constraint firstItem="oA4-Jp-Xe6" firstAttribute="top" secondItem="1E9-2G-1jM" secondAttribute="bottom" constant="15" id="hOH-6k-8gj"/>
+                            <constraint firstItem="U0B-Jd-SLn" firstAttribute="leading" secondItem="Ics-vg-0N4" secondAttribute="trailing" constant="20" id="huq-FT-AzM"/>
+                            <constraint firstItem="HdE-X0-SVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kjl-0K-APG"/>
+                            <constraint firstItem="oA4-Jp-Xe6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lRP-Ht-5z3"/>
+                            <constraint firstItem="1E9-2G-1jM" firstAttribute="top" secondItem="3QR-fz-sCQ" secondAttribute="bottom" constant="15" id="rtC-bf-ND3"/>
+                            <constraint firstItem="3QR-fz-sCQ" firstAttribute="top" secondItem="HdE-X0-SVy" secondAttribute="bottom" constant="15" id="rxA-7R-ZYF"/>
+                            <constraint firstItem="t5m-DD-hTw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="tSV-YJ-1ir"/>
+                            <constraint firstItem="Ics-vg-0N4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vtw-fH-Ch7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentVotingPowerTextFieldValue" destination="Akp-Ek-Vq6" id="K0r-Xn-gvP"/>
+                        <outlet property="daysLabel" destination="oA4-Jp-Xe6" id="QB0-bq-Qq9"/>
+                        <outlet property="hoursLabel" destination="1E9-2G-1jM" id="HGY-rj-Jc4"/>
+                        <outlet property="minutesLabel" destination="3QR-fz-sCQ" id="FYB-bl-SWf"/>
+                        <outlet property="secondsLabel" destination="HdE-X0-SVy" id="WB0-xF-Zqf"/>
+                        <outlet property="targetedVotingPowerTextFieldValue" destination="U0B-Jd-SLn" id="3Nb-nI-obi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="154" height="91"/>
+    </resources>
+</document>
