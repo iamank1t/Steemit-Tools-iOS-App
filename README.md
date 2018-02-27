@@ -14,7 +14,7 @@ Some tools you get in this app :-
 
 ## Development
 
-To contribute, all you need is a local copy of the project.
+To contribute, just fork the repository. Make changes and create a pull request.
 
 ## Running
 
