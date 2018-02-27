@@ -1,7 +1,8 @@
 # Steemit Tools iOS App
 
 Steemit Tools iOS App has been created to provide useful steemit tools to users on their iphone for their convenience. Currently the app is under development and i am working on it everyday to add new tools.
-https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1518959467/cmubawanb5sdf4p6ss0a.gif
+
+![alt text](https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1518959467/cmubawanb5sdf4p6ss0a.gif)
 
 Some tools you get in this app :-
 - Tool to check time for voting power recharge back to 100%. (Added this)
